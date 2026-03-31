@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "name": "hormozi-marketing-skills",
+      "path": ".",
+      "description": "Alex Hormozi-inspired marketing agent skills for business scaling, content/copywriting, lead generation, monetization/value, offer creation, and sales closing."
+    }
+  ]
+}
