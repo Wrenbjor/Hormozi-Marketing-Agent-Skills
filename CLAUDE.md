@@ -8,8 +8,9 @@ A Claude Code plugin containing six agent skills based on Alex Hormozi's marketi
 
 ## Repository Structure
 
-- `plugin.json` — Plugin manifest that registers all six skills by directory path
-- `skills/<name>/SKILL.md` — Each skill is a single Markdown file with YAML frontmatter (`name`, `description`) followed by the framework content
+- `.claude-plugin/marketplace.json` — Marketplace manifest for `/plugin marketplace add`
+- `plugins/hormozi-marketing-skills/plugin.json` — Plugin manifest that registers all six skills
+- `plugins/hormozi-marketing-skills/skills/<name>/SKILL.md` — Each skill is a single Markdown file with YAML frontmatter (`name`, `description`) followed by the framework content
 
 ## The Six Skills and Their Pipeline
 
@@ -60,4 +61,4 @@ description: <one-paragraph description used for skill matching/triggering>
 - Frameworks use numbered steps, tables, and code blocks for structured processes — preserve these formats
 - When adding or modifying frameworks, follow Hormozi's principle hierarchy: philosophy → equation/model → step-by-step workflow → common mistakes
 - Cross-references between skills should use relative paths (`../other-skill/SKILL.md`)
-- If adding a new skill, register it in `plugin.json` under the `skills` array
+- If adding a new skill, register it in `plugins/hormozi-marketing-skills/plugin.json` under the `skills` array

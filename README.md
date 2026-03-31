@@ -31,15 +31,15 @@ Start with **Offer Creation** to build something worth selling, use **Lead Gener
 ### Method 1 — Claude Code plugin (recommended)
 
 ```bash
-claude plugin marketplace add Wrenbjor/Hormozi-Marketing-Agent-Skills
-claude plugin install hormozi-marketing-skills@Hormozi-Marketing-Agent-Skills
+/plugin marketplace add Wrenbjor/Hormozi-Marketing-Agent-Skills
+/plugin install hormozi-marketing-skills@hormozi-marketing-skills-marketplace
 ```
 
 ### Method 2 — Manual copy
 
 ```bash
 git clone git@github.com:Wrenbjor/Hormozi-Marketing-Agent-Skills.git
-cp -r Hormozi-Marketing-Agent-Skills/skills/* ~/.claude/skills/
+cp -r Hormozi-Marketing-Agent-Skills/plugins/hormozi-marketing-skills/skills/* ~/.claude/skills/
 ```
 
 ## Compatibility
@@ -53,21 +53,25 @@ cp -r Hormozi-Marketing-Agent-Skills/skills/* ~/.claude/skills/
 
 ```
 Hormozi-Marketing-Agent-Skills/
-├── plugin.json
+├── .claude-plugin/
+│   └── marketplace.json
 ├── README.md
-└── skills/
-    ├── hormozi-business-scaling/
-    │   └── SKILL.md
-    ├── hormozi-content-copywriting/
-    │   └── SKILL.md
-    ├── hormozi-lead-generation/
-    │   └── SKILL.md
-    ├── hormozi-monetization-value/
-    │   └── SKILL.md
-    ├── hormozi-offer-creation/
-    │   └── SKILL.md
-    └── hormozi-sales-closing/
-        └── SKILL.md
+└── plugins/
+    └── hormozi-marketing-skills/
+        ├── plugin.json
+        └── skills/
+            ├── hormozi-business-scaling/
+            │   └── SKILL.md
+            ├── hormozi-content-copywriting/
+            │   └── SKILL.md
+            ├── hormozi-lead-generation/
+            │   └── SKILL.md
+            ├── hormozi-monetization-value/
+            │   └── SKILL.md
+            ├── hormozi-offer-creation/
+            │   └── SKILL.md
+            └── hormozi-sales-closing/
+                └── SKILL.md
 ```
 
 ## Credits

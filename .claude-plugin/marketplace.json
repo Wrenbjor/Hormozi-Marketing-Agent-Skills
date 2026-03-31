@@ -1,17 +1,16 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "hormozi-marketing-skills-marketplace",
+  "version": "1.0.0",
+  "description": "Alex Hormozi-inspired marketing agent skills for business scaling, copywriting, lead generation, monetization, offer creation, and sales closing.",
   "owner": {
     "name": "WCR Studios"
-  },
-  "metadata": {
-    "description": "Alex Hormozi-inspired marketing agent skills for business scaling, copywriting, lead generation, monetization, offer creation, and sales closing.",
-    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "hormozi-marketing-skills",
       "description": "Six agent skills covering Alex Hormozi's complete marketing playbook: offers, leads, sales, content, monetization, and business scaling.",
-      "source": ".",
+      "source": "./plugins/hormozi-marketing-skills",
       "version": "1.0.0",
       "author": {
         "name": "WCR Studios"
