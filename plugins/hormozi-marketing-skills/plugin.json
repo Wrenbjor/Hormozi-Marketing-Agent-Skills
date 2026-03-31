@@ -1,0 +1,21 @@
+{
+  "name": "hormozi-marketing-skills",
+  "version": "1.0.0",
+  "description": "Alex Hormozi-inspired marketing agent skills for business scaling, content/copywriting, lead generation, monetization/value, offer creation, and sales closing. Use these skills for marketing strategy, sales copy, offer design, and business growth.",
+  "author": {
+    "name": "WCR Studios"
+  },
+  "homepage": "https://github.com/Wrenbjor/Hormozi-Marketing-Agent-Skills",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "sales",
+    "copywriting",
+    "lead-generation",
+    "offers",
+    "business-scaling",
+    "hormozi",
+    "growth"
+  ],
+  "skills": "./skills/"
+}
